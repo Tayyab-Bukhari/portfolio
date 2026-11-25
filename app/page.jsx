@@ -1,5 +1,6 @@
 import PageShell from '@/components/layout/PageShell';
 import Marquee from '@/components/common/Marquee';
+import CursorFX from '@/components/effects/CursorFX';
 import About from '@/components/home/About';
 import Contact from '@/components/home/Contact';
 import Education from '@/components/home/Education';
@@ -27,7 +28,8 @@ const links = [
 
 export default function HomePage() {
   return (
-    <PageShell links={links} switchTo={{ href: '/social-media/', label: 'Social Media' }}>
+    <PageShell className="dev" links={links} switchTo={{ href: '/social-media/', label: 'Social Media' }}>
+      <CursorFX />
       <Hero />
       <Marquee items={home.skills} />
       <About />

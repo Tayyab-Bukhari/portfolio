@@ -7,8 +7,6 @@
   .bento { grid-template-columns: 1fr 1fr; }
   .big { grid-column: 1 / -1; grid-row: auto; }
   .about-photo { grid-column: 1 / -1; grid-row: auto; }
-  .project { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .flip .shot { order: 0; }
 }
 @media (max-width: 960px) {
   #burger { display: block; }

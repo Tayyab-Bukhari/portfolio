@@ -7,7 +7,7 @@ export const site = {
   contact: {
     phone: '+923024602104',
     phoneLabel: '0302 4602104',
-    email: 'tayyabbukhari0@gmail.com', // also shows the contact form
+    email: 'tayyabbukhari0@gmail.com', // contact form messages are sent here
     whatsapp: '923024602104', // country code + number, digits only
     github: '',
     playStore: '',

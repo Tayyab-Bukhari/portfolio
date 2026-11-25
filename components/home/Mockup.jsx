@@ -1,4 +1,4 @@
-/** Illustrative app screens shown beside each project. */
+/** Animated app screens shown beside each project. */
 const Rows = () => (
   <>
     <div className="m-row" />
@@ -10,57 +10,66 @@ const Meter = ({ label, value }) => (
   <div className="meter"><b>{label}</b><u style={{ '--v': `${value}%` }} /></div>
 );
 
+const Tiles = ({ items }) => (
+  <div className="m-grid">
+    {items.map(([icon, label], index) => (
+      <i key={label} style={{ '--n': index }}><span>{icon}</span>{label}</i>
+    ))}
+  </div>
+);
+
 export const mockups = {
-  social: {
-    theme: 's5',
-    screen: (
-      <>
-        <div className="m-head">💬 RideArt</div>
-        <div className="m-grid"><i>Feed</i><i>Chat</i><i>Alerts</i><i>Profile</i></div>
-        <Rows />
-      </>
-    ),
-  },
-  field: {
-    theme: 's4',
-    screen: (
-      <>
-        <div className="m-head">📍 revDSM</div>
-        <div className="m-grid"><i>Field</i><i>Team</i><i>Visits</i><i>Reports</i></div>
-        <Rows />
-      </>
-    ),
-  },
-  construction: {
-    theme: 's1',
-    screen: (
-      <>
-        <div className="m-head">🏗️ Frjar</div>
-        <div className="m-grid"><i>Materials</i><i>Consultants</i><i>Rentals</i><i>Services</i></div>
-        <Rows />
-      </>
-    ),
-  },
-  cycle: {
-    theme: 's2',
-    screen: (
-      <>
-        <div className="m-head">🌸 Cycle Tracker</div>
-        <div className="ring"><span>Day 14</span></div>
-        <Rows />
-      </>
-    ),
-  },
-  device: {
-    theme: 's3',
-    screen: (
-      <>
-        <div className="m-head">🧠 Device Info</div>
-        <Meter label="CPU" value={72} />
-        <Meter label="RAM" value={54} />
-        <Meter label="Battery" value={88} />
-        <Meter label="Storage" value={41} />
-      </>
-    ),
-  },
+  field: (
+    <>
+      <div className="m-head">📍 revDSM</div>
+      <div className="m-map">
+        <svg viewBox="0 0 160 120" preserveAspectRatio="none">
+          <path d="M14 100 C40 96 34 56 68 62 S104 98 120 64 S128 24 148 18" />
+        </svg>
+        <b className="pin p1" /><b className="pin p2" /><b className="pin p3" />
+      </div>
+      <Tiles items={[['👥', 'Team'], ['🏠', 'Visits']]} />
+      <Rows />
+    </>
+  ),
+  social: (
+    <>
+      <div className="m-head">💬 RideArt</div>
+      <div className="m-chat">
+        <span className="bubble" /><span className="bubble mine" /><span className="bubble mid" />
+        <span className="bubble mine short" />
+        <span className="typing"><i /><i /><i /></span>
+      </div>
+      <div className="m-toast">🔔 New message</div>
+    </>
+  ),
+  construction: (
+    <>
+      <div className="m-head">🏗️ Frjar</div>
+      <div className="m-banner">All-in-one platform</div>
+      <Tiles items={[['🧱', 'Materials'], ['👷', 'Consultants'], ['🚜', 'Rentals'], ['🔧', 'Services']]} />
+      <Rows />
+    </>
+  ),
+  cycle: (
+    <>
+      <div className="m-head">🌸 Cycle Tracker</div>
+      <div className="ring"><span>Day 14</span></div>
+      <div className="m-week">
+        {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, index) => <i key={index} style={{ '--n': index }}>{day}</i>)}
+      </div>
+      <Rows />
+    </>
+  ),
+  device: (
+    <>
+      <div className="m-head">🧠 Device Info</div>
+      <Meter label="CPU" value={72} />
+      <Meter label="RAM" value={54} />
+      <Meter label="Battery" value={88} />
+      <div className="m-bars">
+        {Array.from({ length: 10 }, (_, index) => <i key={index} style={{ '--n': index }} />)}
+      </div>
+    </>
+  ),
 };
