@@ -1,3 +1,4 @@
+import { themes } from '@/hooks/theme';
 import '@/styles/variables.css';
 import '@/styles/base.css';
 import '@/styles/components.css';
@@ -5,12 +6,19 @@ import '@/styles/sections.css';
 import '@/styles/animations.css';
 import '@/styles/responsive.css';
 import '@/styles/social.css';
+import '@/styles/home.css';
 
 export const viewport = { themeColor: '#070b14' };
 
-// Runs before the page is drawn: enables animations and applies the saved theme.
+// Runs before the page is drawn: enables animations and applies this page's theme.
 const boot = `document.documentElement.classList.add('js');
-try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}`;
+(function () {
+  var themes = ${JSON.stringify(themes)};
+  var page = themes[location.pathname.indexOf('/social-media') === 0 ? 'social' : 'home'];
+  var saved = null;
+  try { saved = localStorage.getItem(page.key); } catch (e) {}
+  document.documentElement.dataset.theme = saved || page.fallback;
+})();`;
 
 export default function RootLayout({ children }) {
   return (
@@ -20,7 +28,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
           rel="stylesheet"
         />
       </head>

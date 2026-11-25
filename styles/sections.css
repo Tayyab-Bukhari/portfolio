@@ -44,14 +44,7 @@ h1 { font-size: clamp(2.8rem, 7.5vw, 5.4rem); letter-spacing: -.03em; margin: 22
 .track span { display: flex; align-items: center; gap: 40px; padding-right: 40px; font: 700 1.35rem var(--head); color: var(--muted); white-space: nowrap; }
 .track span::after { content: '✦'; color: var(--accent); }
 
-/* ----- Projects ----- */
-.project { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; margin-bottom: 60px; }
-.flip .shot { order: 2; }
-.shot { display: grid; place-items: center; min-height: 400px; border-radius: 30px; border: 1px solid var(--border); overflow: hidden; }
-.s1 { background: linear-gradient(135deg, #f59e0b, #7c2d12); }
-.s2 { background: linear-gradient(135deg, #fb7185, #6b1650); }
-.s3 { background: linear-gradient(135deg, #38bdf8, #312e81); }
-.s4 { background: linear-gradient(135deg, #34d399, #134e4a); }
+/* ----- Project screens ----- */
 .mini { width: 210px; height: 340px; padding: 24px 16px; border-radius: 32px; border: 7px solid #0b0f19; background: #101828; color: #eaf0fb; box-shadow: 0 30px 60px -20px rgba(0,0,0,.6); }
 .m-head { font: 700 1rem var(--head); margin-bottom: 18px; }
 .m-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -94,6 +87,13 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10
 .gallery { display: grid; grid-template-columns: 1.9fr 1fr; gap: 18px; }
 .gallery .photo { height: 500px; }
 .gallery img { object-position: 50% 0; }
-.s4 .m-grid i { background: rgba(52, 211, 153, .18); }
-.s5 { background: linear-gradient(135deg, #a78bfa, #4c1d95); }
-.s5 .m-grid i { background: rgba(167, 139, 250, .2); }
+
+/* ----- Form status ----- */
+#form .trap { display: none; }
+#form button:disabled { opacity: .65; cursor: progress; }
+.form-error { text-align: center; color: var(--text); }
+.form-error a { color: var(--accent); text-decoration: underline; }
+.sent { display: grid; justify-items: center; gap: 10px; max-width: 640px; margin: 36px auto 0; padding: 36px 24px; border-radius: var(--radius); border: 1px solid var(--accent); background: var(--surface); animation: arrive .5s cubic-bezier(.2,.8,.2,1); }
+.sent span { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-size: 2rem; font-weight: 700; animation: pulse 1.8s 3; }
+.sent .btn { margin-top: 10px; color: var(--text); }
+@keyframes arrive { from { opacity: 0; translate: 0 20px; scale: .96; } }

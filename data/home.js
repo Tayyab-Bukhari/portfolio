@@ -32,14 +32,17 @@ export const home = {
     { icon: '🛠️', title: 'Bug Fixing & Optimization', text: 'Find and fix bugs in your existing Kotlin or Java app, then test and tune it.' },
   ],
 
-  // `mockup` picks an illustration from components/mockups.js
+  // `mockup` picks a screen from components/home/Mockup.jsx; `colors` tint its card.
   projects: [
     {
       title: 'revDSM — Field Operations App',
       period: 'Latest project · React Native Developer',
       text: 'An enterprise field operations platform for direct-to-consumer home services organizations, available on Android and iOS by invitation.',
       tags: ['React Native', 'Android', 'iOS', 'Business'],
+      highlights: ['Enterprise field operations platform', 'Built for direct-to-consumer home services', 'Android and iOS, available by invitation'],
+      badges: ['📍 Field ops', '📱 Android & iOS'],
       mockup: 'field',
+      colors: ['#34f5a6', '#0f766e'],
       links: [
         { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.revdsm' },
         { label: 'App Store', url: 'https://apps.apple.com/us/app/revdsm/id6775457391' },
@@ -50,7 +53,10 @@ export const home = {
       period: 'Preesoft · Android (Kotlin)',
       text: 'A social app built natively for Android in Kotlin. My work includes real-time notifications, in-app chat and a redesigned interface with Jetpack Compose.',
       tags: ['Kotlin', 'Jetpack Compose', 'Firebase', 'Chat'],
+      highlights: ['Real-time notifications', 'In-app chat', 'Interface redesigned with Jetpack Compose'],
+      badges: ['💬 Live chat', '🔔 Notifications'],
       mockup: 'social',
+      colors: ['#a78bfa', '#5b21b6'],
       links: [
         { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.rideart.prod' },
       ],
@@ -60,21 +66,30 @@ export const home = {
       period: 'Mar – Dec 2024',
       text: 'An all-in-one construction platform that brings material purchases, consultant hiring, equipment rentals, maintenance services and real estate browsing into a single app.',
       tags: ['Android', 'Marketplace', 'Services', 'Real Estate'],
+      highlights: ['Material purchases and equipment rentals', 'Consultant hiring and maintenance services', 'Real estate browsing'],
+      badges: ['🧱 Materials', '🏠 Real estate'],
       mockup: 'construction',
+      colors: ['#fbbf24', '#9a3412'],
     },
     {
       title: 'Period Tracker & Ovulation',
       period: 'Jan – Apr 2024',
       text: 'Blood: Period & Cycle Tracker is a science-backed app that gives users personalised insights into their menstrual cycle.',
       tags: ['Android', 'Health', 'Personalisation'],
+      highlights: ['Science-backed app', 'Personalised menstrual cycle insights'],
+      badges: ['🌸 Insights', '📅 Cycle'],
       mockup: 'cycle',
+      colors: ['#fb7185', '#9d174d'],
     },
     {
       title: 'Device Info: Check System, CPU',
       period: 'Nov – Dec 2023',
       text: 'A diagnostic app showing real-time details about the system, CPU, memory, battery and sensors of an Android device.',
       tags: ['Android', 'Diagnostics', 'Real-time data'],
+      highlights: ['System and CPU details', 'Memory and battery status', 'Real-time sensor information'],
+      badges: ['⚙️ CPU', '🔋 Battery'],
       mockup: 'device',
+      colors: ['#38d9ff', '#1e40af'],
     },
   ],
 
