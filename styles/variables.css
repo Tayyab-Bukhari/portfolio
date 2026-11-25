@@ -1,0 +1,27 @@
+/* Design tokens: colours, radius and fonts for both themes */
+
+/* ----- Theme ----- */
+:root {
+  --bg: #070b14;
+  --surface: rgba(255, 255, 255, .045);
+  --border: rgba(255, 255, 255, .1);
+  --text: #eaf0fb;
+  --muted: #9aa7bd;
+  --accent: #3ddc84;
+  --accent-2: #38bdf8;
+  --accent-3: #8b5cf6;
+  --on-accent: #04120a;
+  --radius: 22px;
+  --head: 'Space Grotesk', system-ui, sans-serif;
+}
+[data-theme="light"] {
+  --bg: #f5f7fb;
+  --surface: rgba(255, 255, 255, .75);
+  --border: rgba(10, 20, 40, .1);
+  --text: #0d1526;
+  --muted: #4e5b72;
+  --accent: #0a7d48;
+  --accent-2: #0369a1;
+  --accent-3: #6d28d9;
+  --on-accent: #fff;
+}

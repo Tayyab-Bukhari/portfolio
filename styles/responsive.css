@@ -1,0 +1,31 @@
+/* Breakpoints and reduced motion. Load last */
+
+/* ----- Responsive ----- */
+@media (max-width: 960px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .grid.four, .grid.three { grid-template-columns: repeat(2, 1fr); }
+  .bento { grid-template-columns: 1fr 1fr; }
+  .big { grid-column: 1 / -1; grid-row: auto; }
+  .about-photo { grid-column: 1 / -1; grid-row: auto; }
+  .project { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .flip .shot { order: 0; }
+}
+@media (max-width: 960px) {
+  #burger { display: block; }
+  .js #menu { display: none; position: absolute; top: calc(100% + 10px); left: 0; right: 0; flex-direction: column; padding: 14px; border-radius: 22px; border: 1px solid var(--border); background: var(--bg); }
+  .js #menu.open { display: flex; }
+  html:not(.js) #menu, html:not(.js) #burger { display: none; }
+}
+@media (max-width: 560px) {
+  .grid.four, .grid.three, .bento, .gallery, #form { grid-template-columns: minmax(0, 1fr); }
+  .stats { gap: 22px; }
+  .chip { font-size: .75rem; padding: 7px 12px; }
+  section.wrap:not(.hero) { padding-block: 64px; }
+  .gallery .photo:first-child { height: auto; aspect-ratio: 4 / 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .reveal { opacity: 1; transform: none; }
+  .grad { color: var(--accent); background: none; }
+}
