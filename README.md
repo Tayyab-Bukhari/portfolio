@@ -36,4 +36,5 @@ public/images/  Photos
 | Phone, email, WhatsApp, GitHub, CV | `data/site.js` |
 | Jobs, projects, skills, schools | `data/home.js` |
 | Platforms, packages, playbooks, FAQ | `data/social.js` |
+| Chatbot name, answers and keywords | `data/bot.js` |
 | Colours | `styles/home.css`, `styles/social.css`, `styles/variables.css` |

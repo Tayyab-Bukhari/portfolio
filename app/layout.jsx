@@ -8,6 +8,7 @@ import '@/styles/animations.css';
 import '@/styles/responsive.css';
 import '@/styles/social.css';
 import '@/styles/home.css';
+import '@/styles/bot.css';
 
 export const viewport = { themeColor: '#070b14' };
 

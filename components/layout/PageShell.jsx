@@ -1,3 +1,4 @@
+import ChatBot from '@/components/common/ChatBot';
 import CursorGlow from '@/components/effects/CursorGlow';
 import Header from './Header';
 import Footer from './Footer';
@@ -12,6 +13,7 @@ export default function PageShell({ className, links, switchTo, children }) {
       <Header links={links} switchTo={switchTo} />
       <main id="main">{children}</main>
       <Footer />
+      <ChatBot />
     </div>
   );
 }
