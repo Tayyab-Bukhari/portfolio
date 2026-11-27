@@ -36,6 +36,8 @@ export default function ContactForm({ subject = 'Project enquiry', messageLabel 
       if (!response.ok || String(result.success) !== 'true') throw new Error(result.message);
       setStatus('sent');
     } catch (error) {
+      // The reason (for example, that the form still needs activation) shows in the browser console.
+      console.warn('Contact form:', error.message);
       setStatus('failed');
     }
   };

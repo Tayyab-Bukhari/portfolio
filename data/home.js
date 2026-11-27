@@ -2,45 +2,48 @@
 export const home = {
   // Rotating titles in the hero.
   roles: [
-    'Android App Developer',
+    'Mobile App Developer',
     'React Native Developer',
-    'Kotlin & Java Developer',
-    'Freelance Android Developer',
+    'Flutter Developer',
+    'Android App Developer',
+    'iOS App Developer',
     'API Integration Specialist',
-    'Android UI Builder',
   ],
 
   stats: [
-    { label: 'Years in Android', since: '2021-01', suffix: '+' },
+    { label: 'Years in mobile apps', since: '2021-01', suffix: '+' },
     { label: 'Featured apps', value: 5 },
     { label: 'Companies', value: 7 },
   ],
 
   skills: [
-    'Kotlin', 'Java', 'Android SDK', 'Jetpack Compose', 'Firebase', 'API Integration', 'Offline Database',
-    'Google AdMob', 'React Native', 'iOS Development', 'Git', 'UI / UX',
+    'React Native', 'Flutter', 'Dart', 'Android', 'iOS Development', 'Kotlin', 'Java', 'Android SDK',
+    'Jetpack Compose', 'Firebase', 'API Integration', 'Offline Database', 'Google AdMob', 'Git', 'UI / UX',
     'Performance Optimization', 'Testing & Validation', 'App Deployment',
     'Problem Solving', 'Design Thinking', 'Graphic Design', 'Digital Marketing',
   ],
 
   services: [
-    { icon: '📱', title: 'Android App Development', text: 'From UI design to full app creation and deployment in Kotlin or Java, including delivery, dating, chat and e-commerce apps.' },
-    { icon: '🔌', title: 'Firebase & API Integration', text: 'Connect your app to Firebase and Android APIs with dependable data flow.' },
-    { icon: '💾', title: 'Offline Database', text: 'Local storage so your app keeps useful data on the device.' },
-    { icon: '💰', title: 'Google AdMob Integration', text: 'Add Google ads to your app so it can earn revenue.' },
-    { icon: '🌐', title: 'Website to Android App', text: 'Turn your website into a customised Android app with a splash screen and ads.' },
-    { icon: '🛠️', title: 'Bug Fixing & Optimization', text: 'Find and fix bugs in your existing Kotlin or Java app, then test and tune it.' },
+    { icon: 'react', title: 'React Native App Development', text: 'One codebase for Android and iOS, from the first screen to store release.' },
+    { icon: 'flutter', title: 'Flutter App Development', text: 'Cross-platform apps in Flutter and Dart with a consistent interface on Android and iOS.' },
+    { icon: 'android', title: 'Android App Development', text: 'Native apps in Kotlin or Java, including delivery, dating, chat and e-commerce apps.' },
+    { icon: 'apple', title: 'iOS App Development', text: 'Apps for iPhone, from interface design through testing and App Store release.' },
+    { icon: 'firebase', title: 'Firebase & API Integration', text: 'Connect your app to Firebase and REST APIs with dependable data flow.' },
+    { icon: 'sqlite', title: 'Offline Database', text: 'Local storage so your app keeps useful data on the device.' },
+    { icon: 'admob', title: 'Google AdMob Integration', text: 'Add Google ads to your app so it can earn revenue.' },
+    { icon: 'html5', title: 'Website to Mobile App', text: 'Turn your website into a customised mobile app with a splash screen and ads.' },
+    { icon: 'wrench', title: 'Bug Fixing & Optimization', text: 'Find and fix bugs in your existing mobile app, then test and tune it.' },
   ],
 
   // `mockup` picks a screen from components/home/Mockup.jsx; `colors` tint its card.
   projects: [
     {
       title: 'revDSM — Field Operations App',
-      period: 'Latest project · React Native Developer',
-      text: 'An enterprise field operations platform for direct-to-consumer home services organizations, available on Android and iOS by invitation.',
+      period: 'Latest project · React Native',
+      text: 'An enterprise field operations platform for direct-to-consumer home services organizations, built entirely in React Native and available on Android and iOS by invitation.',
       tags: ['React Native', 'Android', 'iOS', 'Business'],
-      highlights: ['Enterprise field operations platform', 'Built for direct-to-consumer home services', 'Android and iOS, available by invitation'],
-      badges: ['📍 Field ops', '📱 Android & iOS'],
+      highlights: ['Built entirely in React Native', 'For direct-to-consumer home services', 'Android and iOS, available by invitation'],
+      badges: [{ icon: 'react', label: 'React Native' }, { icon: 'android', label: 'Android & iOS' }],
       mockup: 'field',
       colors: ['#34f5a6', '#0f766e'],
       links: [
@@ -54,7 +57,7 @@ export const home = {
       text: 'A social app built natively for Android in Kotlin. My work includes real-time notifications, in-app chat and a redesigned interface with Jetpack Compose.',
       tags: ['Kotlin', 'Jetpack Compose', 'Firebase', 'Chat'],
       highlights: ['Real-time notifications', 'In-app chat', 'Interface redesigned with Jetpack Compose'],
-      badges: ['💬 Live chat', '🔔 Notifications'],
+      badges: [{ icon: 'chat', label: 'Live chat' }, { icon: 'bell', label: 'Notifications' }],
       mockup: 'social',
       colors: ['#a78bfa', '#5b21b6'],
       links: [
@@ -67,7 +70,7 @@ export const home = {
       text: 'An all-in-one construction platform that brings material purchases, consultant hiring, equipment rentals, maintenance services and real estate browsing into a single app.',
       tags: ['Android', 'Marketplace', 'Services', 'Real Estate'],
       highlights: ['Material purchases and equipment rentals', 'Consultant hiring and maintenance services', 'Real estate browsing'],
-      badges: ['🧱 Materials', '🏠 Real estate'],
+      badges: [{ icon: 'layers', label: 'Materials' }, { icon: 'home', label: 'Real estate' }],
       mockup: 'construction',
       colors: ['#fbbf24', '#9a3412'],
     },
@@ -77,7 +80,7 @@ export const home = {
       text: 'Blood: Period & Cycle Tracker is a science-backed app that gives users personalised insights into their menstrual cycle.',
       tags: ['Android', 'Health', 'Personalisation'],
       highlights: ['Science-backed app', 'Personalised menstrual cycle insights'],
-      badges: ['🌸 Insights', '📅 Cycle'],
+      badges: [{ icon: 'chart', label: 'Insights' }, { icon: 'calendar', label: 'Cycle' }],
       mockup: 'cycle',
       colors: ['#fb7185', '#9d174d'],
     },
@@ -87,7 +90,7 @@ export const home = {
       text: 'A diagnostic app showing real-time details about the system, CPU, memory, battery and sensors of an Android device.',
       tags: ['Android', 'Diagnostics', 'Real-time data'],
       highlights: ['System and CPU details', 'Memory and battery status', 'Real-time sensor information'],
-      badges: ['⚙️ CPU', '🔋 Battery'],
+      badges: [{ icon: 'cpu', label: 'CPU' }, { icon: 'battery', label: 'Battery' }],
       mockup: 'device',
       colors: ['#38d9ff', '#1e40af'],
     },
