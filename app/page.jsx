@@ -13,9 +13,9 @@ import Services from '@/components/home/Services';
 import { home } from '@/data/home';
 
 export const metadata = {
-  title: 'Syed Tayyab Raza — Android App Developer in Lahore',
-  description: 'Syed Tayyab Raza is an Android app developer in Lahore building fast, user-friendly apps with Kotlin, Java, Firebase and API integrations.',
-  openGraph: { title: 'Syed Tayyab Raza — Android App Developer', description: 'Kotlin and Java Android apps, from idea to release.', type: 'website' },
+  title: 'Syed Tayyab Raza — Mobile App Developer | React Native, Flutter, Android & iOS',
+  description: 'Syed Tayyab Raza is a mobile app developer building Android and iOS apps with React Native, Flutter, Kotlin and Java for clients worldwide.',
+  openGraph: { title: 'Syed Tayyab Raza — Mobile App Developer', description: 'React Native, Flutter, Android and iOS apps, from idea to release.', type: 'website' },
 };
 
 const links = [

@@ -2,6 +2,7 @@ import Reveal from '@/components/effects/Reveal';
 import Tilt from '@/components/effects/Tilt';
 import Section from '@/components/common/Section';
 import Tags from '@/components/common/Tags';
+import Icon from '@/components/common/Icon';
 import { home } from '@/data/home';
 import { mockups } from './Mockup';
 
@@ -19,7 +20,9 @@ function Preview({ title, mockup, badges, link }) {
       <span className="halo" />
       <span className="orbit-line" />
       <Tilt className="mini">{mockups[mockup]}</Tilt>
-      {badges.map((badge, index) => <span key={badge} className={`float depth f${index + 1}`}>{badge}</span>)}
+      {badges.map(({ icon, label }, index) => (
+        <span key={label} className={`float depth f${index + 1}`}><Icon name={icon} /> {label}</span>
+      ))}
     </Frame>
   );
 }

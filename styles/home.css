@@ -184,3 +184,31 @@
   .f1 { top: 5%; left: 4%; }
   .f2 { bottom: 5%; right: 4%; }
 }
+
+/* ----- Logos, in each brand's colours ----- */
+.icon { flex: none; vertical-align: -.18em; }
+.dev .card .logo-tile[data-icon] { background: #fff; color: var(--logo); border-color: rgba(10, 30, 50, .12); }
+.logo-tile[data-icon="react"] { --logo: #61dafb; }
+.logo-tile[data-icon="flutter"] { --logo: #02569b; }
+.logo-tile[data-icon="android"] { --logo: #3ddc84; }
+.logo-tile[data-icon="apple"] { --logo: #fff; }
+.logo-tile[data-icon="firebase"] { --logo: #dd2c00; }
+.logo-tile[data-icon="sqlite"] { --logo: #003b57; }
+.logo-tile[data-icon="admob"] { --logo: #ea4335; }
+.logo-tile[data-icon="html5"] { --logo: #e34f26; }
+.logo-tile[data-icon="wrench"] { --logo: #07202b; }
+/* Logos that are meant to sit on a dark background. */
+.dev .card .logo-tile[data-icon="react"] { background: #20232a; }
+.dev .card .logo-tile[data-icon="android"] { background: #073042; }
+.dev .card .logo-tile[data-icon="apple"] { background: #000; border-color: rgba(255, 255, 255, .25); }
+.dev .ico .icon { color: inherit; }
+.dev .chip { display: flex; align-items: center; gap: 8px; }
+.chip[data-icon="react"] .icon { color: #61dafb; }
+.chip[data-icon="flutter"] .icon { color: #47c5fb; }
+.chip[data-icon="android"] .icon { color: #3ddc84; }
+[data-theme="light"] .chip[data-icon="react"] .icon { color: #087ea4; }
+[data-theme="light"] .chip[data-icon="flutter"] .icon { color: #02569b; }
+[data-theme="light"] .chip[data-icon="android"] .icon { color: #1b8f52; }
+.float { display: flex; align-items: center; gap: 7px; }
+.m-head { display: flex; align-items: center; gap: 8px; }
+.m-head .icon { color: var(--c1); }

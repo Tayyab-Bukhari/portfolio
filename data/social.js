@@ -12,12 +12,12 @@ export const social = {
   ],
 
   platforms: [
-    { badge: 'f', color: 'linear-gradient(135deg,#1668e3,#0b3fa8)', name: 'Facebook', text: 'Page setup, posts, community replies and local lead campaigns.', tags: ['Page', 'Groups', 'Ads'] },
+    { badge: 'facebook', color: 'linear-gradient(135deg,#1668e3,#0b3fa8)', name: 'Facebook', text: 'Page setup, posts, community replies and local lead campaigns.', tags: ['Page', 'Groups', 'Ads'] },
     { badge: 'instagram', color: 'linear-gradient(135deg,#d9560b,#d1206f 50%,#6f2c9c)', name: 'Instagram', text: 'Reels, stories, carousels and a profile that turns visitors into bookings.', tags: ['Reels', 'Stories', 'DMs'] },
     { badge: 'in', color: 'linear-gradient(135deg,#0a66c2,#063b73)', name: 'LinkedIn', text: 'Authority content and networking for lawyers, doctors and business owners.', tags: ['Profile', 'Articles', 'Outreach'] },
-    { badge: '▶', color: 'linear-gradient(135deg,#e00000,#8a0014)', name: 'YouTube', text: 'Channel setup, Shorts, titles, thumbnails and search optimisation.', tags: ['Shorts', 'SEO', 'Thumbnails'] },
-    { badge: '𝕏', color: 'linear-gradient(135deg,#2b2b35,#050507)', name: 'X (Twitter)', text: 'Timely updates, short threads and conversations around your niche.', tags: ['Posts', 'Threads', 'Replies'] },
-    { badge: '🍔', color: 'linear-gradient(135deg,#047c43,#03482a)', name: 'Uber Eats', text: 'Store and menu optimisation, offers, ads and review monitoring.', tags: ['Menu', 'Offers', 'Ratings'] },
+    { badge: 'youtube', color: 'linear-gradient(135deg,#e00000,#8a0014)', name: 'YouTube', text: 'Channel setup, Shorts, titles, thumbnails and search optimisation.', tags: ['Shorts', 'SEO', 'Thumbnails'] },
+    { badge: 'x', color: 'linear-gradient(135deg,#2b2b35,#050507)', name: 'X (Twitter)', text: 'Timely updates, short threads and conversations around your niche.', tags: ['Posts', 'Threads', 'Replies'] },
+    { badge: 'ubereats', color: 'linear-gradient(135deg,#047c43,#03482a)', name: 'Uber Eats', text: 'Store and menu optimisation, offers, ads and review monitoring.', tags: ['Menu', 'Offers', 'Ratings'] },
   ],
 
   industries: [

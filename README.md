@@ -1,6 +1,6 @@
 # Syed Tayyab Raza — Portfolio (React / Next.js)
 
-Pages: `/` (Android app development) and `/social-media/` (marketing and Uber Eats).
+Pages: `/` (mobile app development) and `/social-media/` (marketing and Uber Eats).
 
 ## Run
 ```bash
