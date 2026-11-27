@@ -83,10 +83,11 @@
 .social .stats dd { background: var(--flow); -webkit-background-clip: text; background-clip: text; color: transparent; filter: brightness(1.35); }
 [data-theme="light"] .social .stats dd { filter: none; }
 
-/* ----- Ribbons: two strips moving in opposite directions ----- */
-.ribbons { position: relative; display: grid; gap: 14px; padding-block: 30px; overflow: hidden; }
+/* ----- Ribbons: two parallel strips moving in opposite directions ----- */
+/* Both share one tilt so they never cross. The padding leaves room for the raised ends. */
+.ribbons { position: relative; display: grid; gap: 16px; padding-block: calc(1.5vw + 14px); overflow: hidden; }
 .social .marquee { rotate: -1.5deg; scale: 1.04; border: 0; background: var(--flow); background-size: 200% auto; animation: flow 7s linear infinite alternate; }
-.social .marquee + .marquee { rotate: 1.5deg; background: var(--surface); border-block: 1px solid var(--border); animation: none; }
+.social .marquee + .marquee { background: var(--surface); border-block: 1px solid var(--border); animation: none; }
 .social .marquee + .marquee .track { animation-direction: reverse; }
 .social .track span { color: #fff; }
 .social .track span::after { content: '✦'; color: #fff; }
