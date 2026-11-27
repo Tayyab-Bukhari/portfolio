@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { themes } from '@/hooks/theme';
 import '@/styles/variables.css';
 import '@/styles/base.css';
@@ -32,7 +33,11 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Reports real visitors' page speed to the Vercel dashboard. */}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
